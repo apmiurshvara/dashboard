@@ -108,8 +108,9 @@ input {
   width: 81.7%;
 
   margin-left: 500px;
-  background-color: burlywood;
+  background-image: url(../images/pikist.jpg);
   position: absolute;
+  padding: 30px;
 }
 .toggle {
   display: none;
@@ -127,5 +128,12 @@ input {
 #submit:hover {
   background-image: url(../images/pikist.jpg);
   background-position: right;
+  color: white;
+}
+#list_one,
+#list_two,
+#list_three {
+  list-style: none;
+  margin: 30px;
   color: white;
 }
