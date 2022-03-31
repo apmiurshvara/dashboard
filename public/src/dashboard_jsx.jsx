@@ -2,8 +2,12 @@ const App = function () {
   return (
     <div id="main">
       <div id="dash">
-        <button id="one">FORM</button>
-        <button id="two">DETAILS</button>
+        <button id="one" onClick={btn1}>
+          FORM
+        </button>
+        <button id="two" onClick={btn2}>
+          DETAILS
+        </button>
       </div>
       <div id="page_one">
         <div id="form_page">
@@ -31,7 +35,7 @@ const App = function () {
           </form>
         </div>
       </div>
-      <div id="page_two" class="toggle">
+      <div id="page_two" className="toggle">
         <div id="list_one">
           <ul>
             <li>apurva</li>

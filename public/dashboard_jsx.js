@@ -7,12 +7,12 @@ var App = function App() {
       { id: "dash" },
       React.createElement(
         "button",
-        { id: "one" },
+        { id: "one", onClick: btn1 },
         "FORM"
       ),
       React.createElement(
         "button",
-        { id: "two" },
+        { id: "two", onClick: btn2 },
         "DETAILS"
       )
     ),
@@ -76,7 +76,7 @@ var App = function App() {
     ),
     React.createElement(
       "div",
-      { id: "page_two", "class": "toggle" },
+      { id: "page_two", className: "toggle" },
       React.createElement(
         "div",
         { id: "list_one" },
