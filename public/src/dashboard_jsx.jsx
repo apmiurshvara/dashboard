@@ -2,36 +2,36 @@ const App = function () {
   return (
     <div id="main">
       <div id="dash">
-        <button id="one"></button>
-        <button id="two"></button>
+        <button id="one">FORM</button>
+        <button id="two">DETAILS</button>
       </div>
       <div id="page_one">
         <div id="form_page">
-          <h2>FILL CREDENTIALS</h2>
+          <h1>FILL CREDENTIALS</h1>
           <form>
             <label for="input_one" id="input_one_label">
-              FIRST NAME
+              <p>FIRST NAME</p>
             </label>
             <input type="text" id="input_one"></input>
 
             <label for="input_two" id="input_two_label">
-              LAST NAME
+              <p> LAST NAME</p>
             </label>
             <input type="text" id="input_two"></input>
 
             <label for="input_three" id="input_three_label">
-              E-MAIL
+              <p> E-MAIL</p>
             </label>
             <input type="text" id="input_three"></input>
             <label for="input_four" id="input_four_label">
-              INSTITUTION
+              <p>INSTITUTION</p>
             </label>
             <input type="text" id="input_four"></input>
             <input type="submit" id="submit"></input>
           </form>
         </div>
       </div>
-      <div id="page_two">
+      <div id="page_two" class="toggle">
         <div id="list_one">
           <ul>
             <li>apurva</li>

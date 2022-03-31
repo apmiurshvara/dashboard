@@ -5,8 +5,16 @@ var App = function App() {
     React.createElement(
       "div",
       { id: "dash" },
-      React.createElement("button", { id: "one" }),
-      React.createElement("button", { id: "two" })
+      React.createElement(
+        "button",
+        { id: "one" },
+        "FORM"
+      ),
+      React.createElement(
+        "button",
+        { id: "two" },
+        "DETAILS"
+      )
     ),
     React.createElement(
       "div",
@@ -15,7 +23,7 @@ var App = function App() {
         "div",
         { id: "form_page" },
         React.createElement(
-          "h2",
+          "h1",
           null,
           "FILL CREDENTIALS"
         ),
@@ -25,25 +33,41 @@ var App = function App() {
           React.createElement(
             "label",
             { "for": "input_one", id: "input_one_label" },
-            "FIRST NAME"
+            React.createElement(
+              "p",
+              null,
+              "FIRST NAME"
+            )
           ),
           React.createElement("input", { type: "text", id: "input_one" }),
           React.createElement(
             "label",
             { "for": "input_two", id: "input_two_label" },
-            "LAST NAME"
+            React.createElement(
+              "p",
+              null,
+              " LAST NAME"
+            )
           ),
           React.createElement("input", { type: "text", id: "input_two" }),
           React.createElement(
             "label",
             { "for": "input_three", id: "input_three_label" },
-            "E-MAIL"
+            React.createElement(
+              "p",
+              null,
+              " E-MAIL"
+            )
           ),
           React.createElement("input", { type: "text", id: "input_three" }),
           React.createElement(
             "label",
             { "for": "input_four", id: "input_four_label" },
-            "INSTITUTION"
+            React.createElement(
+              "p",
+              null,
+              "INSTITUTION"
+            )
           ),
           React.createElement("input", { type: "text", id: "input_four" }),
           React.createElement("input", { type: "submit", id: "submit" })
@@ -52,7 +76,7 @@ var App = function App() {
     ),
     React.createElement(
       "div",
-      { id: "page_two" },
+      { id: "page_two", "class": "toggle" },
       React.createElement(
         "div",
         { id: "list_one" },
